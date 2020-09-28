@@ -24,7 +24,7 @@ const noteRestore = (notesArr) => {
 const user = document.getElementById('user');
 
 const userRegister = () => {
-    let register = confirm("Hola, es necesario tu registro :3");
+    let register = confirm("Hola, es necesario tu registro.");
     if(register){
         let user = prompt("Ingresa tu nombre!", "");
         if(user){
@@ -37,7 +37,7 @@ if(!localStorage.getItem('User')){
     userRegister();
 }else{
     userName = localStorage.getItem('User');
-    user.innerHTML = `Bienvenido ${userName}`;
+    user.innerHTML = `Welcome ${userName}`;
 }
 
 window.onload = () => {
